@@ -1,5 +1,4 @@
-require "rails_form_object/version"
+# frozen_string_literal: true
 
-module RailsFormObject
-  # Your code goes here...
-end
+require 'rails_form_object/version'
+require 'rails_form_object/base'

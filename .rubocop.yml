@@ -1,0 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+      - 'bin/**'
+      - 'vendor/**/*'
+      - 'example/*'
+      - 'rails_form_object.gemspec'
+Documentation:
+   Enabled: false
+Metrics/LineLength:
+  Max: 120
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+Metrics/MethodLength:
+  Max: 15
