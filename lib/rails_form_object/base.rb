@@ -12,6 +12,12 @@ module RailsFormObject
       define_method(:stored_attributes) { attr }
     end
 
+    def self.as(name)
+      define_method :model_name do
+        ActiveModel::Name.new(self, nil, name.to_s)
+      end
+    end
+
     def filtered_attributes(attributes)
       raise AttributesMustBeDefined unless respond_to? :stored_attributes
       attributes.select { |key, _value| stored_attributes.include?(key.to_sym) }

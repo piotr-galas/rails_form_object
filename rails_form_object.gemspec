@@ -27,4 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.49.1'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'activemodel'
+  spec.add_development_dependency 'activeview'
+  spec.add_development_dependency 'pry'
+
 end

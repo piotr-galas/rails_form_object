@@ -3,6 +3,7 @@
 class EmptyForm < RailsFormObject::Base; end
 
 class NoValidationsForm < RailsFormObject::Base
+  as :person
   attributes :empty, :number, :string
 end
 
